@@ -1,0 +1,39 @@
+.toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.942);
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+/* Logo styling */
+.toolbar-logo {
+  position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo {
+  height: 40px; /* Adjust as needed */
+}
+
+.navbar-brand {
+    border: 2px solid #000000 !important;
+    cursor: pointer;
+    border-radius: 16px;
+} 
+
+/* Media query to apply mobile view styling */
+@media (max-width: 768px) {
+  /* Hide desktop-only elements on mobile */
+  .desktop-only {
+    display: none;
+  }
+
+  /* Show mobile-only elements on mobile */
+  .mobile-only {
+    display: inline-flex;
+  }
+}
